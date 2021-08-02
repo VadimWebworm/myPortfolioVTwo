@@ -1,0 +1,24 @@
+$bg: #d6d6d6;
+$title: #202020;
+$text: #333533;
+$orange: #ffd100;
+$yellow: #ffee32;
+$bg1: #f5f5f5;
+
+
+@mixin title {
+    font-family: Raleway, "Times New Roman", Times, sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: $title;
+}
+@mixin text {
+    font-family: Raleway, "Times New Roman", Times, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: $text;
+}
+@mixin logo {
+    font-family: "Tenor Sans", sans-serif;
+    // font-family: "Halimun", "Tenor Sans", Raleway, "Times New Roman", sans-serif ;
+}
