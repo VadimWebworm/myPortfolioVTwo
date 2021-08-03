@@ -8,7 +8,7 @@ $(function () {
 		$('.preloader-inner').fadeOut();
 		$('.preloader').delay(300).fadeOut('slow');
 	});
-	
+
 
 
 	/* ---------------------------------------------- /*
@@ -51,44 +51,44 @@ $(function () {
 	/* ---------------------------------------------- */
 	//var color = $('#home').css('backgroundColor');
 
-	$('.skills').waypoint(function () {
+	//skills
+	$('#skills').waypoint(function () {
 		$('.chart').each(function () {
 			$(this).easyPieChart({
 				size: 140,
-				animate: 2000,
+				// animate: 2000,
 				lineCap: 'butt',
 				scaleColor: false,
-				barColor: '#FF5252',
+				barColor: '#ffd100',
 				trackColor: 'transparent',
 				lineWidth: 10
 			});
 		});
 	}, { offset: '80%' });
 
-
 	/* ---------------------------------------------- /*
 	 * Quote Rotator
 	/* ---------------------------------------------- */
 
-		/*
-		- how to call the plugin:
-		$( selector ).cbpQTRotator( [options] );
-		- options:
-		{
-			// default transition speed (ms)
-			speed : 700,
-			// default transition easing
-			easing : 'ease',
-			// rotator interval (ms)
-			interval : 8000
-		}
-		- destroy:
-		$( selector ).cbpQTRotator( 'destroy' );
-		*/
+	/*
+	- how to call the plugin:
+	$( selector ).cbpQTRotator( [options] );
+	- options:
+	{
+		// default transition speed (ms)
+		speed : 700,
+		// default transition easing
+		easing : 'ease',
+		// rotator interval (ms)
+		interval : 8000
+	}
+	- destroy:
+	$( selector ).cbpQTRotator( 'destroy' );
+	*/
 
-		$('#cbp-qtrotator').cbpQTRotator();
+	$('#cbp-qtrotator').cbpQTRotator();
 
-	
+
 
 
 	/* ---------------------------------------------- /*
@@ -103,7 +103,7 @@ $(function () {
 	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 		$('#home').css({ 'background-attachment': 'scroll' });
 	} else {
-		$('#home').parallax('50%', 0.1);
+		$('#home').parallax('90%', 0.8);
 	}
 
 
