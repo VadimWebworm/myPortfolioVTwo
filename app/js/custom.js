@@ -20,7 +20,7 @@ $(function () {
 		var anchor = $(this);
 		$('html, body').stop().animate({
 			scrollTop: $(anchor.attr('href')).offset().top
-		}, 1000);
+		}, 0);
 		e.preventDefault();
 	});
 
@@ -86,7 +86,7 @@ $(function () {
 	$( selector ).cbpQTRotator( 'destroy' );
 	*/
 
-	$('#cbp-qtrotator').cbpQTRotator();
+	// $('#cbp-qtrotator').cbpQTRotator();
 
 
 
@@ -112,7 +112,6 @@ $(function () {
 	/* ---------------------------------------------- */
 
 	wow = new WOW({
-		mobile: false
 	});
 	wow.init();
 

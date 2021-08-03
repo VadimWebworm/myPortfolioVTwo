@@ -23,5 +23,8 @@
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.0.2"
+    }
 }

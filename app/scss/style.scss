@@ -142,6 +142,7 @@
     h1 {
         font-size: 40px;
         font-weight: 800;
+        margin: 10px;
     }
 }
 
@@ -170,7 +171,8 @@
     background-color: #000;
     z-index: 20;
     width: 100%;
-    padding: 15px 0;
+    padding: 20px 0;
+    // border:  none;
 }
 .header_fixed {
     position: fixed;
@@ -185,7 +187,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    text-align: center;
 }
 .header__logo {
     font-size: 22px;
@@ -196,6 +198,7 @@
 .menu__list {
     text-align: center;
     display: inline-block;
+    margin-bottom: 0;
     li {
         display: inline-block;
         // margin-top: 30px;
@@ -205,7 +208,6 @@
     }
 }
 .menu__list li a {
-    
     text-transform: uppercase;
     @include text;
     color: #fff;
@@ -227,8 +229,10 @@
 .header__logo:hover {
     color: $orange;
 }
+.sticky-wrapper {
+    height: auto !important;
+}
 //end header
-
 
 /* ---------------------------------------------- /*
  * Servise
@@ -296,8 +300,10 @@
     text-transform: uppercase;
     margin-top: 40px;
     text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
 }
 .service__inner {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     color: $text;
@@ -346,6 +352,7 @@
 }
 .iconbox__web {
     margin-top: 11em;
+    padding-left: 10px;
 
     background: linear-gradient(
         153deg,
@@ -357,6 +364,7 @@
 }
 .iconbox__help {
     margin-bottom: 11em;
+    padding-left: 10px;
     background: linear-gradient(
         153deg,
         rgba(255, 238, 50, 1) 5%,
@@ -461,18 +469,15 @@
 }
 
 .calltoaction h2 {
-    font-size: 25px;
+    @include text;
+    font-size: 30px;
+    font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: 5px;
     color: #fff;
+
 }
 
-.calltoaction-decription {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    font-size: 20px;
-    color: #fff;
-}
 
 .calltoaction-btn {
     text-align: center;
@@ -659,7 +664,6 @@
 
 //end footer
 
-
 /* ---------------------------------------------- /*
  * Scroll to top
 /* ---------------------------------------------- */
@@ -673,7 +677,7 @@
 }
 
 .scroll-up a {
-    background-color: rgba(135, 135, 135, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     display: block;
     width: 35px;
     height: 35px;
@@ -685,8 +689,8 @@
 
 .scroll-up a:hover,
 .scroll-up a:active {
-    background-color: rgba(235, 235, 235, 0.8);
-    color: #e7746f;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: $orange;
 }
 
 /* ---------------------------------------------- /*
@@ -710,12 +714,6 @@
 .scroll-down span {
     position: relative;
     color: #fff;
-    -webkit-animation-name: drop;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-play-state: running;
     animation-name: drop;
     animation-duration: 1s;
     animation-timing-function: linear;
