@@ -17,13 +17,10 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
-	<link href="css/simple-line-icons.css" rel="stylesheet" media="screen">
 	<link href="css/animate.css" rel="stylesheet">
 	
     
 	<!-- Custom styles CSS -->
-	<link href="css/style.css" rel="stylesheet" media="screen">
     
     <script src="js/modernizr.custom.js"></script>
        
@@ -38,7 +35,7 @@
 
 	<!-- Home start -->
 
-	<section id="home" class="pfblock-image screen-height"  style="background-image: url(images/logo_bg_three.jpg);">
+	<section id="home" class="logo screen-height" style="background-image: url(images/logo_bg_three.jpg);" >
         <div class="logo-overlay"></div>
 		<div class="logotype">
             <div class="logo__text">G<span>V</span></div>
@@ -62,8 +59,44 @@
 	<!-- Home end -->
 
 	<!-- Navigation start -->
-
 	<header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <!-- <div class="header__menu-btn">
+                    <div class="header__menu-row"></div>
+                    <div class="header__menu-row"></div>
+                    <div class="header__menu-row"></div>
+                </div> -->
+                <nav class="header__menu">
+                    <a class="header__logo" href="index.html">
+                        Vadim Gubin
+                    </a>
+                    <ul class="menu__list">
+                        <li>
+                            <a href="#home">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#services">Услуги</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#portfolio">Работы</a>
+                        </li> -->
+                        <li>
+                            <a href="#skills">Навыки</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#testimonials">Отзывы</a>
+                        </li> -->
+                        <li>
+                            <a href="#contact">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+	<!-- <header class="header">
 
 		<nav class="navbar navbar-custom" role="navigation">
 
@@ -94,13 +127,13 @@
 
 		</nav>
 
-	</header>
+	</header> -->
 
 	<!-- Navigation end -->
 
     <!-- Services start -->
 
-	<section id="services" class="pfblock pfblock-gray">
+	<!-- <section id="services" class="pfblock pfblock-gray">
 		<div class="container">
 			<div class="row">
 
@@ -184,9 +217,75 @@
 
 				</div>
 
-			</div><!-- .row -->
-		</div><!-- .container -->
-	</section>
+			</div>
+		</div>
+	</section> -->
+	<section id="services" style="background-image: url(images/bg_section.JPG);">
+        <div class="services__elem">
+            <img class="sphere_one" src="images/sphere_bg.png" alt="">
+            <img class="sphere_two" src="images/sphere_bg.png" alt="">
+        </div>
+        <div class="container">
+            <div class="service__info">
+                <div class="service__title"> Чем я занимаюсь</div>
+                <div class="service__quote"> У всех есть мечты, но не все мечты осуществляются… </div>
+                <div class="service__quite-author"> Фома Аквинский</div>
+                <div class="service_description"> Я здесь, чтобы осуществить вашу!</div>
+            </div>
+            <div class="service__inner row">
+
+                <div class="col-sm-3 iconbox-disign">
+                    <div class="service__inner-iconbox disign__item">
+                        <div class="iconbox-icon">
+                            <span class="icon-magic-wand"></span>
+                        </div>
+                        <div class="iconbox-text">
+                            <h3 class="iconbox-title">WEB дизайн</h3>
+                            <div class="iconbox-desc">
+                                <span>UI/UX</span> дизайн. Проектирование структуры и последующая визуализация под
+                                индивидуальные особенности, желания клиента.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 iconbox__web">
+                    <div class="service__inner-iconbox ">
+                        <div class="iconbox-icon">
+                            <span class="icon-puzzle"></span>
+                        </div>
+                        <div class="iconbox-text">
+                            <h3 class="iconbox-title">WEB разработка</h3>
+                            <div class="iconbox__list">
+                                <li>Разработка сайтов любой сложности под ключ</li>
+                                <li>Верстка макетов</li>
+                                <li>Адаптивность и кроссбраузерность</li>
+                                <li>Постановка сайта на CMS</li>
+                                <li>Размещение вашего сайта на хостинг</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 iconbox__help">
+                    <div class="service__inner-iconbox">
+                        <div class="iconbox-icon">
+                            <span class="icon-question"></span>
+                        </div>
+                        <div class="iconbox-text">
+                            <h3 class="iconbox-title">Консультация</h3>
+                            <div class="iconbox__list">
+                                <li> Сопровождение сайта</li>
+                                <li> Помощь с выбором формата сайта</li>
+                                <li> Обучение системе управления сайтом</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 	<!-- Services end -->
     
