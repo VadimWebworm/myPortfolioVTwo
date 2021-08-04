@@ -44,6 +44,7 @@ gulp.task('script', function () {
         'node_modules/bootstrap/dist/js/bootstrap.js',
         // 'node_modules/jquery-migrate/dist/jquery-migrate.js',
         // 'node_modules/waypoints/lib/jquery.waypoints.js'
+        'node_modules/paroller.js/dist/jquery.paroller.js'
         
 
     ])

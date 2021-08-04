@@ -4,7 +4,7 @@ $(function () {
 	 * Preloader
 	/* ---------------------------------------------- */
 
-	$(window).load(function () {
+	$(window).on('load', function () {
 		$('.preloader-inner').fadeOut();
 		$('.preloader').delay(300).fadeOut('slow');
 	});
@@ -66,6 +66,20 @@ $(function () {
 		});
 	}, { offset: '80%' });
 
+	// $("[data-paroller-factor]").paroller();
+
+	//paroller
+	// $(".paroller, [data-paroller-factor]").paroller({
+	// 	factor: 0.3,            // multiplier for scrolling speed and offset
+	// 	factorXs: 0.1,          // multiplier for scrolling speed and offset if window width is <576px
+	// 	factorSm: 0.2,          // multiplier for scrolling speed and offset if window width is <=768px
+	// 	factorMd: 0.2,          // multiplier for scrolling speed and offset if window width is <=1024px
+	// 	factorLg: 0.3,          // multiplier for scrolling speed and offset if window width is <=1200px
+	// 	type: 'foreground',     // background, foreground
+	// 	direction: 'horizontal', // vertical, horizontal
+	// 	transition: 'transform 0.1s ease' // CSS transition, added on elements where type:'foreground'
+	// });
+
 	/* ---------------------------------------------- /*
 	 * Quote Rotator
 	/* ---------------------------------------------- */
@@ -100,11 +114,6 @@ $(function () {
 	$(window).on('resize', function () {
 		$(".screen-height").height($(window).height());
 	});
-	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-		$('#home').css({ 'background-attachment': 'scroll' });
-	} else {
-		$('#home').parallax('90%', 0.8);
-	}
 
 
 	/* ---------------------------------------------- /*
@@ -114,6 +123,7 @@ $(function () {
 	wow = new WOW({
 	});
 	wow.init();
+
 
 
 	/* ---------------------------------------------- /*
