@@ -111,6 +111,7 @@
 		$('.calltoaction').parallax('50%', 0.1);
 		$('#services').parallax('50%', 0.1);
 		$('#footer').parallax('50%', 0.1);
+		$('.bg_sphere').parallax("50%", 0.4);
 
 
 
