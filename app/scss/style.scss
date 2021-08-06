@@ -586,6 +586,8 @@
 }
 .contact__inner {
     justify-content: center;
+    position: relative;
+    z-index: 10;
 }
 .contact__box {
     text-align: center;
@@ -683,8 +685,22 @@
     color: rgba($orange, 1);
 }
 .footer__inner{
-    position: relative;
+    
 }
+.footer__sphere{
+    background-attachment: fixed;
+    background-size: 200px 200px;
+    z-index: -10;
+    opacity: 0.5;
+    right: 145px;
+    width: 200px;
+    // height: 300px;
+    // top: -110px;
+    height: 300px;
+    top: 694px;
+    transform: rotate(0deg);
+}
+
 .copyright__name {
     font-family: Halimun, Raleway, "Times New Roman", Times, sans-serif;
     font-size: 14px;
