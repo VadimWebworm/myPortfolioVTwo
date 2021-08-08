@@ -26,6 +26,7 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "bootstrap": "^5.0.2",
-    "paroller.js": "^1.4.7"
+    "paroller.js": "^1.4.7",
+    "simple-scrollspy": "^2.1.0"
   }
 }

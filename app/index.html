@@ -15,11 +15,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800;900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/a7b1adb133.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <!-- Custom styles CSS -->
-
     <script src="js/modernizr.custom.js"></script>
+
 
 </head>
 
@@ -33,7 +34,7 @@
 
     <!-- Home start -->
 
-    <section id="home" class="logo screen-height" style="background-image: url(images/logo_bg_three.jpg);">
+    <section id="home" class="scrollspy logo screen-height" style="background-image: url(images/logo_bg_three.jpg);">
         <div class="logo-overlay"></div>
         <div class="logotype">
             <div class="logo__text">G<span>V</span></div>
@@ -56,7 +57,7 @@
     <!-- Home end -->
 
     <!-- Navigation start -->
-    <header class="header">
+    <header class="header scrollspy">
         <div class="container">
             <div class="header__inner">
                 <!-- <div class="header__menu-btn">
@@ -64,35 +65,36 @@
                     <div class="header__menu-row"></div>
                     <div class="header__menu-row"></div>
                 </div> -->
-                <nav class="header__menu">
-                    <a class="header__logo" href="index.html">
+                <nav class="header__menu ">
+                    <div class="header__logo" href="index.html">
                         Vadim Gubin
-                    </a>
-                    <ul class="menu__list">
+                    </div>
+                    <ul class="menu__list " id="menu">
                         <li>
-                            <a href="#home">Главная</a>
+                            <a class="scrollspy-link" href="#home" data-scrollspy="home">Главная</a>
                         </li>
                         <li>
-                            <a href="#services">Услуги</a>
+                            <a class="scrollspy-link" href="#services" data-scrollspy="services">Услуги</a>
                         </li>
                         <!-- <li>
                             <a href="#portfolio">Работы</a>
                         </li> -->
                         <li>
-                            <a href="#skills">Навыки</a>
+                            <a class="scrollspy-link" href="#skills" data-scrollspy="skills">Навыки</a>
                         </li>
                         <!-- <li>
                             <a href="#testimonials">Отзывы</a>
                         </li> -->
                         <li>
-                            <a href="#contact">Контакты</a>
+                            <a class="scrollspy-link" href="#contact" data-scrollspy="contact">Контакты</a>
                         </li>
                     </ul>
+                    <!-- <span class = "scrollspy-indicator"> </span> -->
                 </nav>
             </div>
         </div>
     </header>
-    <section id="services" style="background-image: url(images/bg_section.JPG);">
+    <section id="services" class="scrollspy" style="background-image: url(images/bg_section.JPG);">
         <!-- <div class="services__elem">
             <img class="sphere_one" src="images/sphere_bg.png" alt="">
             <img class="sphere_two" src="images/sphere_bg.png" alt="">
@@ -185,7 +187,7 @@
     <!-- end calltoaction -->
 
     <!-- start skills -->
-    <section id="skills">
+    <section class="scrollspy" id="skills">
         <div class="container">
             <div class="skills row">
                 <div class="skills__info row">
@@ -194,7 +196,7 @@
                         <div class="skills__line inner__line"></div>
                         <div class="skill__description title-two">Прогресс не стоит на месте и для того, чтобы быть
                             конкурентно
-                            способным, то необходимо постоянно повышать уровень знаний.</div>
+                            способным, необходимо постоянно повышать уровень знаний.</div>
                     </div>
                 </div>
 
@@ -228,7 +230,7 @@
     <!-- end skills -->
 
     <!-- start contact -->
-    <section id="contact">
+    <section class="scrollspy" id="contact">
         <div class="container">
             <div class=" contact__inner row">
                 <div class="footer__sphere bg_sphere"></div>
@@ -289,11 +291,11 @@
                 <div class="col-sm-12">
 
                     <ul class="social__links">
-                        <li><a href="index.html#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="index.html#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="index.html#"><i class="fa fa-pinterest"></i></a></li>
-                        <li><a href="index.html#"><i class="fa fa-envelope"></i></a></li>
+                        <li><a href="https://t.me/Papa_Vadim" target="_blank"><i class="fa icon-telegram"></i></a></li>
+                        <li><a href="https://www.instagram.com/papa_gubernator/" target="_blank"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://vk.com/gubernatorforever" target="_blank"><i class="fa fa-vk"></i></a></li>
+                        <li><a href="index.html#"><i class="fa fa-whatsapp"></i></a></li>
                     </ul>
 
                     <p>
@@ -334,12 +336,13 @@
     <script src="js/jquery.parallax-1.1.3.js"></script>
     <script src="js/imagesloaded.pkgd.js"></script>
     <script src="js/jquery.sticky.js"></script>
+    <script src="js/simple-scrollspy.min.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.easypiechart.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/jquery.cbpQTRotator.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 

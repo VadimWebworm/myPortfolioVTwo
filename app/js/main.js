@@ -1,3 +1,4 @@
+
 (function ($) {
 
 	/* ---------------------------------------------- /*
@@ -46,6 +47,8 @@
 	$('.header').sticky({
 		topSpacing: 0
 	});
+	
+
 
 
 
@@ -116,7 +119,7 @@
 	$('#footer').parallax('50%', 0.1);
 	$('.bg_sphere').parallax("10%", -0.9);
 	$('.help__sphere').parallax("10%", -1.2);
-	$('.footer__sphere').parallax("10%", -0.2 * 1.8);
+	$('.footer__sphere').parallax("100%", 0.2);
 
 
 
@@ -127,6 +130,8 @@
 		mobile: false
 	});
 	wow.init();
+
+   
 
 	var anchor = {
 
@@ -183,6 +188,8 @@
 	}
 	anchor.init();
 
+	
+
 
 
 
@@ -237,6 +244,16 @@
 		}
 		return false;
 	});
+	window.onload = function () {
+        scrollSpy('#menu', {
+            offset: 100,
+            menuActiveTarget: '.scrollspy-link',
+            sectionClass: '.scrollspy',
+            activeClass: 'active',
+        })
+    }
+
+
 
 
 })(jQuery);
