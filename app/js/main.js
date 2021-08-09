@@ -108,14 +108,14 @@
 		$(".screen-height").height($(window).height());
 	});
 
-	// if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-	// 	$('#home').css({ 'background-attachment': 'scroll' });
-	// } else {
+	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+		$('#home').css({ 'background-attachment': 'scroll' });
+	} else {
 		$('#home').parallax('100%', 0.1);
-	// }
+	}
 
 	$('.calltoaction').parallax('50%', 0.1);
-	$('#services').parallax('50%', 0.1);
+	$('#services').parallax('100%', 0.1);
 	$('#footer').parallax('50%', 0.1);
 	$('.bg_sphere').parallax("10%", -0.9);
 	$('.help__sphere').parallax("10%", -1.2);
