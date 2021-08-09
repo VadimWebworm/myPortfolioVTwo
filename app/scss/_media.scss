@@ -1,8 +1,105 @@
+@media (max-width: 1100px) {
+    .service__inner-iconbox{
+        width: 280px;
+        padding: 20px 5px;
+    }
+
+}
+@media (max-width: 940px) {
+    .service__inner-iconbox{
+        width: 250px;
+    }
+
+}
+@media (max-width: 710px) {
+    .menu__list {
+        display: none;
+    }
+    .header__inner {
+        position: relative;
+    }
+    .header__menu-btn {
+        position: absolute;
+        display: block;
+        right: 20px;
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 36px;
+            color: #fff;
+        }
+        .header__menu-row {
+            transition: all cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.4s;
+        }
+    }
+    .menu__btn-active {
+        .header__menu-row {
+            background-color: $orange;
+            margin-bottom: -4px;
+            transform: rotate(45deg);
+            transition: all 0.5s;
+        }
+        .down-row {
+            transform: rotate(-45deg);
+        }
+        .header__menu-remove {
+            display: none;
+        }
+    }
+    .header__box {
+        display: flex;
+        align-items: center;
+        transition: all 0.5s;
+        left: 100%;
+        right: -100%;
+        z-index: 20000;
+        position: absolute;
+        background-color: #fff;
+        height: 70px;
+        &.active {
+            left: 70px;
+            right: 90px;
+        }
+    }
+}
+
 @media (max-width: 600px) {
-    // #home{
-    //     background-position: center -100px;
-    // }
     .logo__inner h1 {
         font-size: 36px;
+    }
+}
+
+@media (max-width: 420px) {
+    .logo__inner h1 {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    .logo__title-one {
+        font-size: 14px;
+    }
+    .logo__title_two {
+        font-size: 14px;
+    }
+    .header__inner {
+        padding: 0;
+    }
+}
+@media (max-width: 330px) {
+    .logo__inner {
+        padding: 0;
+    }
+    .logo__inner h1 {
+        font-size: 26px;
+    }
+    .header__logo {
+        display: none;
+        &-adaptive {
+            display: block;
+        }
+    }
+    .header__inner {
+        padding: 0 20px;
     }
 }
