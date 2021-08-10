@@ -3,16 +3,6 @@
         width: 280px;
         padding: 20px 5px;
     }
-    .bg_sphere{
-        height: 713px;
-    }
-    .help__sphere{
-        height: 604px;
-        top: 128px;
-    }
-    .footer__sphere{
-        display: none;
-    }
 }
 @media (max-width: 940px) {
     .service__inner-iconbox {
@@ -41,13 +31,6 @@
     }
     .service_description {
         font-size: 35px;
-    }
-    .bg_sphere{
-        right: 28px;
-        height: 724px;
-    }
-    .help__sphere{
-        height: 604px;
     }
 }
 @media (max-width: 760px) {
@@ -98,13 +81,7 @@
         margin-top: -8em;
         margin-bottom: 0;
     }
-    .bg_sphere {
-        right: -70px;
-        height: 986px;
-    }
-    .help__sphere{
-        display: none;
-    }
+   
 }
 @media (max-width: 710px) {
     .menu__list {
@@ -249,17 +226,12 @@
         background: none;
         padding-left: 0;
     }
-    .bg_sphere {
-        display: none;
-    }
+   
     .service__inner{
         position: relative;
         z-index: 10000;
     }
-    .adaptive__sphere{
-        display: block;
-        z-index: -1;
-    }
+   
 }
 
 @media (max-width: 420px) {

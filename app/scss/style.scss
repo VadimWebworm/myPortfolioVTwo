@@ -67,7 +67,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center -100px;
-    background-attachment: fixed;
+    // background-attachment: fixed;
     background-color: #222;
     // height: 100%;
     // background-size: 100% 100%;
@@ -269,18 +269,6 @@
         height: auto;
         z-index: 0;
     }
-    .sphere_one {
-        opacity: 0.3;
-        width: 10%;
-        top: 300px;
-        left: 250px;
-    }
-    .sphere_two {
-        opacity: 0.5;
-        width: 15%;
-        top: 1000px;
-        right: 240px;
-    }
 }
 .service__info {
     display: flex;
@@ -431,38 +419,6 @@
 
 //     }
 // }
-.bg_sphere {
-    position: absolute;
-    // overflow: hidden;
-    background-image: url("../images/sphere_bg.png");
-    background-size: 300px 300px;
-    background-repeat: no-repeat;
-    background-attachment: local;
-    background-position: center;
-
-    width: 350px;
-    height: 740px;
-    // margin-top: 200px;
-    z-index: -1;
-    opacity: 0.4;
-    top: -100px;
-    right: 223px;
-    transform: rotate(180deg);
-}
-.help__sphere {
-    background-size: 200px 200px;
-    z-index: -1;
-    opacity: 0.5;
-    // right: 228px;
-    width: 200px;
-    height: 460px;
-    top: 300px;
-    left: 0px;
-    transform: rotate(0deg);
-}
-.adaptive__sphere{
-    display: none;
-}
 // start skills
 #skills {
     background-color: #000;
