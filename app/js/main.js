@@ -118,8 +118,9 @@
 	$('#services').parallax('100%', 0.1);
 	$('#footer').parallax('50%', 0.1);
 	$('.bg_sphere').parallax("10%", -0.9);
-	$('.help__sphere').parallax("10%", -1.2);
+	$('.help__sphere').parallax("10%", -1.5);
 	$('.footer__sphere').parallax("100%", 0.2);
+	
 
 
 
